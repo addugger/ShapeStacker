@@ -21,7 +21,7 @@ public class Rectangle extends Shape {
 	 * Returns area (sideA * sideB) as a double.
 	 */
 	@Override
-	double getArea() {
+	public double getArea() {
 		return getSideA() * getSideB();
 	}
 

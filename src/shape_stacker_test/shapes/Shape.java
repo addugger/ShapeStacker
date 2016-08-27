@@ -23,7 +23,7 @@ public abstract class Shape {
 	 * returned will be unitless as far as the method is concerned, so
 	 * keeping track of units will be up to the caller of getArea().
 	 */
-	abstract double getArea();
+	public abstract double getArea();
 
 	public int getCornerCnt() {
 		return cornerCnt;
