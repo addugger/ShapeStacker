@@ -1,7 +1,7 @@
 /**
  * Shape is the base class for all other shapes to be used by ShapeStacker.
  */
-package shape_stacker_test;
+package shape_stacker_test.shapes;
 
 /**
  * @author Aaron Dugger
@@ -24,20 +24,16 @@ public abstract class Shape {
 	}
 	
 	/**
-	 * Each shape class must implement the getArea() method.
+	 * Each shape class must implement the getArea() method. The area
+	 * returned will be unitless as far as the method is concerned, so
+	 * keeping track of units will be up to the caller of getArea().
 	 */
 	abstract double getArea();
 
-	/**
-	 * @return the cornerCnt
-	 */
 	public int getCornerCnt() {
 		return cornerCnt;
 	}
 
-	/**
-	 * @param cornerCnt the cornerCnt to set
-	 */
 	public void setCornerCnt(int cornerCnt) {
 		this.cornerCnt = cornerCnt;
 	}
