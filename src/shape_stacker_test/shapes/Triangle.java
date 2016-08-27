@@ -1,5 +1,5 @@
 /**
- * Defines an object that represents a triangle.
+ * Defines a triangle object.
  */
 package shape_stacker_test.shapes;
 
@@ -15,7 +15,23 @@ public class Triangle extends Shape {
 	 * @param sideC length of sideC
 	 */
 	public Triangle(double sideA, double sideB, double sideC) {
-		super(3);
+		super(3, 'T');
+		setSideA(sideA);
+		setSideB(sideB);
+		setSideC(sideC);
+	}
+	
+	/**
+	 * Alternate constructor that allows shapeId to be passed (for use by
+	 * extending classes).
+	 * 
+	 * @param sideA length of sideA
+	 * @param sideB length of sideB
+	 * @param sideC length of sideC
+	 * @param shapeId shapeId of triangle
+	 */
+	protected Triangle(double sideA, double sideB, double sideC, char shapeId) {
+		super(3, shapeId);
 		setSideA(sideA);
 		setSideB(sideB);
 		setSideC(sideC);

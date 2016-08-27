@@ -1,6 +1,6 @@
 /**
- * Defines an object representing a square, which is really just a
- * regular rectangle (in the regular polygon sense).
+ * Defines a square object, which is really just a regular rectangle
+ * (in the regular polygon sense).
  */
 package shape_stacker_test.shapes;
 
@@ -9,10 +9,10 @@ public class Square extends Rectangle {
 	private double side;
 
 	/**
-	 * @param side length of side
+	 * @param side length of each side of the square
 	 */
 	public Square(double side) {
-		super(side, side);
+		super(side, side, 'S');
 		setSide(side);
 	}
 
