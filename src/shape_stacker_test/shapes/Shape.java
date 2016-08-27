@@ -3,7 +3,7 @@
  */
 package shape_stacker_test.shapes;
 
-public abstract class Shape {
+public abstract class Shape implements Comparable<Shape> {
 	/**
 	 * Number of corners the shape has. This will be used to help determine
 	 * which shapes are "larger" than others when they have equal area.
@@ -34,6 +34,27 @@ public abstract class Shape {
 	 * keeping track of units will be up to the caller of getArea().
 	 */
 	public abstract double getArea();
+	
+	/**
+	 * Compares Shape's. Order is based off of first area (greater
+	 * area is a greater shape), and then corners (greater cornerCnt is a greater
+	 * shape). If the shapes have the same area and the same number of corners,
+	 * then they are considered to be equal. If equal, 0 is returned; if this > shape,
+	 * non-zero positive value returned; if this < shape, negative value is returned.
+	 * 
+	 * @param shape shape to compare to
+	 */
+	@Override
+	public int compareTo(Shape shape) {
+		int rtn;;
+		// If areas aren't equal, area is sufficient for comparison
+		rtn = Double.compare(this.getArea(), shape.getArea());
+		// If area's are equal, we then compare based on number of corners
+		if (rtn == 0) {
+			rtn = Integer.compare(this.getCornerCnt(), shape.getCornerCnt());
+		}
+		return rtn;
+	}
 
 	public int getCornerCnt() {
 		return CORNER_CNT;
