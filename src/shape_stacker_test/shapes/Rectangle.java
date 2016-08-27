@@ -3,19 +3,15 @@
  */
 package shape_stacker_test.shapes;
 
-/**
- * @author Aaron Dugger
- *
- */
 public class Rectangle extends Shape {
 	
-	private int sideA;
-	private int sideB;
+	private double sideA;
+	private double sideB;
 
 	/**
 	 * @param cornerCnt
 	 */
-	public Rectangle(int sideA, int sideB) {
+	public Rectangle(double sideA, double sideB) {
 		super(4);
 		setSideA(sideA);
 		setSideB(sideB);
@@ -29,19 +25,19 @@ public class Rectangle extends Shape {
 		return getSideA() * getSideB();
 	}
 
-	public int getSideA() {
+	public double getSideA() {
 		return sideA;
 	}
 
-	public void setSideA(int sideA) {
+	public void setSideA(double sideA) {
 		this.sideA = sideA;
 	}
 
-	public int getSideB() {
+	public double getSideB() {
 		return sideB;
 	}
 
-	public void setSideB(int sideB) {
+	public void setSideB(double sideB) {
 		this.sideB = sideB;
 	}
 

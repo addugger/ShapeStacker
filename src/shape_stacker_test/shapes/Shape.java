@@ -3,11 +3,6 @@
  */
 package shape_stacker_test.shapes;
 
-/**
- * @author Aaron Dugger
- * 
- *
- */
 public abstract class Shape {
 	/**
 	 * Number of corners the shape has. This will be used to help determine
