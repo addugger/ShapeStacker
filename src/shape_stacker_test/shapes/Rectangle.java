@@ -9,13 +9,13 @@ public class Rectangle extends Shape {
 	private double sideB;
 
 	/**
+	 * Constructor
+	 * 
 	 * @param sideA length of first two opposing sides of the rectangle
 	 * @param sideB length of second two opposing sides of the rectangle
 	 */
 	public Rectangle(double sideA, double sideB) {
-		super(4, 'R');
-		setSideA(sideA);
-		setSideB(sideB);
+		this(sideA, sideB, 'R');
 	}
 	
 	/**

@@ -10,15 +10,14 @@ public class Triangle extends Shape {
 	private double sideC;
 
 	/**
+	 * Constructor
+	 * 
 	 * @param sideA length of sideA
 	 * @param sideB length of sideB
 	 * @param sideC length of sideC
 	 */
 	public Triangle(double sideA, double sideB, double sideC) {
-		super(3, 'T');
-		setSideA(sideA);
-		setSideB(sideB);
-		setSideC(sideC);
+		this(sideA, sideB, sideC, 'T');
 	}
 	
 	/**
