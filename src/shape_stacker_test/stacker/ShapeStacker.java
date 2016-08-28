@@ -67,6 +67,8 @@ public class ShapeStacker {
 	 * the same area and number of corners are considered equal, so
 	 * in these cases the order is determined arbitrarily based on
 	 * Collections.sort().
+	 * 
+	 * @return string representation of the shape stack
 	 */
 	public String toString() {
 		int shapeCnt = getShapeStack().size();;
@@ -82,6 +84,7 @@ public class ShapeStacker {
 				// Append ]
 				str.append(']');
 			}
+			i++;
 		}
 		return str.toString();
 	}

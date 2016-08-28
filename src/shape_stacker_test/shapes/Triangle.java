@@ -51,6 +51,8 @@ public class Triangle extends Shape {
 	
 	/**
 	 * Calculates and retuns the half perimeter of the triangle.
+	 * 
+	 * @return the half perimeter of the triangle
 	 */
 	private double getHalfPerimeter() {
 		return (getSideA() + getSideB() + getSideC())/2;

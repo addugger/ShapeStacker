@@ -32,6 +32,8 @@ public abstract class Shape implements Comparable<Shape> {
 	 * Each shape class must implement the getArea() method. The area
 	 * returned will be unitless as far as the method is concerned, so
 	 * keeping track of units will be up to the caller of getArea().
+	 * 
+	 * @return the area of the shape
 	 */
 	public abstract double getArea();
 	
