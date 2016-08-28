@@ -5,14 +5,14 @@ package shape_stacker_test.shapes;
 
 public class Circle extends Shape {
 	
-	private double radius;
+	private double diameter;
 
 	/**
 	 * @param radius radius of circle
 	 */
-	public Circle(double radius) {
+	public Circle(double diameter) {
 		super(0, 'C');
-		setRadius(radius);
+		setDiameter(diameter);
 	}
 
 	/**
@@ -20,16 +20,16 @@ public class Circle extends Shape {
 	 */
 	@Override
 	public double getArea() {
-		double r = getRadius();
+		double r = getDiameter()/2;
 		return Math.PI * (r * r);
 	}
 
-	public double getRadius() {
-		return radius;
+	public double getDiameter() {
+		return diameter;
 	}
 
-	public void setRadius(double radius) {
-		this.radius = radius;
+	public void setDiameter(double diameter) {
+		this.diameter = diameter;
 	}
 
 }
