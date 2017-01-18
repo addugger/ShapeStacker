@@ -1,2 +1,2 @@
 language: Java
-script: JUnit ShapeStackerTest.java
+script: mvn test -f .src/shape_stacker_test/stacker/test/ShapeStackerTest.java
