@@ -1,5 +1,8 @@
 build: off
 
+test_script:
+  -gradle test
+
 notifications:
 - provider: Email
   to:
