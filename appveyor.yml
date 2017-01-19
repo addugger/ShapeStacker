@@ -5,16 +5,11 @@ environment:
   matrix:
     - JAVA_HOME: C:\Program Files\Java\jdk1.7.0
     - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
-install:
-  - SET PATH=%JAVA_HOME%\bin;%PATH%
-  - echo %PATH%
-  - java -version
-  - gradlew.bat --version
 
 build_script:
-  - gradlew.bat -u -i assemble
+  - gradlew assemble
 test_script:
-  - gradlew.bat -u -i -S check
+  - gradlew check
 
 notifications:
 - provider: Email
