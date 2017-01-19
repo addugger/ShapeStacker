@@ -6,3 +6,6 @@ requirements/description can be found in CodeTestDescription.pdf, but pretty
 much you create some simple shapes, and it "stacks" them two dimensionally
 with the largest on the bottom, so that, looking from the top, you can
 see some amount of the outline of as many objects as possible.
+
+Note that I added the Travis and Appveyor build stuff just to get some practice
+with the CI systems before starting another, more involoved project using them.
