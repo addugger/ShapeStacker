@@ -1,7 +1,7 @@
-build: off
-
+build_script:
+  - gradlew.bat -u -i assemble
 test_script:
-  - gradle test
+  - gradlew.bat -u -i -S check
 
 notifications:
 - provider: Email
