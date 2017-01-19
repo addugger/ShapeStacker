@@ -1,4 +1,11 @@
-version: 1.0.{build}
-clone_depth: 50
-build:
-  verbosity: minimal
+build: off
+
+notifications:
+- provider: Email
+  to:
+  - addugger@gmail.com
+  subject: 'Build failed: ShapeStacker'
+  message: The continuous integration build failed. See https://ci.appveyor.com/project/addugger/shapestacker for details.
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: false
