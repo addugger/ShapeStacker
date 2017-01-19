@@ -1,3 +1,6 @@
+install:
+  - gradlew.bat
+
 build_script:
   - gradlew.bat -u -i assemble
 test_script:
